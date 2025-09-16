@@ -1,9 +1,19 @@
 #app {
   display: grid;
   grid-template-columns: 51.25% 48.75%;
-
   height: 100vh;
   overflow: hidden;
+  font: var(--font);
+  color: var(--text-secondary);
+}
+
+h1,
+h2 {
+  color: var(--text-primary);
+}
+
+a {
+  text-decoration: none;
 }
 
 main {
@@ -13,6 +23,29 @@ main {
   .main-container {
     max-width: 52.8rem;
     margin-left: auto;
+
+    header {
+      margin-bottom: 4.8rem;
+
+      .back {
+        margin-bottom: 2.4rem;
+        a {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          color: var(--text-tertiary);
+
+          :hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  h1 {
+    font: var(--heading2);
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -22,5 +55,19 @@ aside {
 
   .aside-container {
     max-width: 49.6rem;
+
+    header {
+      display: grid;
+      gap: 0.8rem;
+      margin-bottom: 3.2rem;
+
+      h2 {
+        font: 700 4rem/1.25 var(--font-family);
+
+        span {
+          color: var(--text-highlight);
+        }
+      }
+    }
   }
 }
