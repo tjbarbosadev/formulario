@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+
+  /* brand */
+  --brand-light: #f67841;
+  --brand-mid: #f3541c;
+  --brand-dark: #e43a12;
+
+  /* text */
+  --text-primary: #292524;
+  --text-secondary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
+
+  /* surface */
+  --surface-primary: #fff;
+  --surface-secondary: #fee7d6;
+  --surface-disabled: #e7e5e4;
+
+  /* stroke */
+  --stroke-default: #d6d3d1;
+  --stroke-highlight: #f3541c;
+
+  /* semantic */
+  --semantic-error: #dc2626;
+
+  /* typography */
+  --heading1: 700 3.2rem/1.2 var(--font-family);
+  --heading2: 700 2.4rem/1.2 var(--font-family);
+  --heading3: 700 2rem/1.2 var(--font-family);
+  --heading4: 700 1.6rem/1.2 var(--font-family);
+}
