@@ -23,6 +23,7 @@
   &:hover,
   &:has(input:focus) {
     border-width: 2px;
+    padding-block: 2.7rem;
     border-color: var(--stroke-highlight);
     background-color: var(--surface-secondary);
 

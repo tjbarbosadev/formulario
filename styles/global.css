@@ -45,3 +45,15 @@ body {
   --heading3: 700 2rem/1.2 var(--font-family);
   --heading4: 700 1.6rem/1.2 var(--font-family);
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}

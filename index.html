@@ -32,7 +32,7 @@
           </header>
 
           <form action="" method="post" enctype="multipart/form-data">
-            <fieldset>
+            <fieldset class="child-info">
               <legend>Informações da criança</legend>
 
               <div class="input-box">
@@ -101,6 +101,67 @@
                     Clique aqui para selecionar<br />
                     os arquivos
                   </p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="address">
+              <legend>Endereço residencial</legend>
+
+              <div class="input-box">
+                <label for="postalcode">CEP</label>
+                <input
+                  type="text"
+                  id="postalcode"
+                  name="postalcode"
+                  placeholder="01234-567"
+                />
+              </div>
+
+              <div class="flex">
+                <div class="input-box flex-2">
+                  <label for="street">Rua</label>
+                  <input
+                    type="text"
+                    id="street"
+                    name="street"
+                    placeholder="Rua de Tal"
+                    disabled
+                  />
+                </div>
+
+                <div class="input-box flex-1">
+                  <label for="number">Número</label>
+                  <input
+                    type="text"
+                    id="number"
+                    name="number"
+                    placeholder="123"
+                  />
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="input-box flex-2">
+                  <label for="city">Cidade</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="São Paulo"
+                    disabled
+                  />
+                </div>
+
+                <div class="input-box flex-1">
+                  <label for="state">Estado</label>
+                  <input
+                    type="text"
+                    id="state"
+                    name="state"
+                    placeholder="SP"
+                    disabled
+                  />
                 </div>
               </div>
             </fieldset>
