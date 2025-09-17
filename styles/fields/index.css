@@ -1,0 +1,53 @@
+@import url(droparea.css);
+
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 1px solid var(--stroke-default);
+  padding: 1.2rem 1.6rem;
+  font: var(--font);
+  background-color: var(--surface-primary);
+}
+
+label {
+  font: 400 1.4rem/1.4 var(--font-family);
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+input[type="date"]:focus-within {
+  outline: 0.4rem solid var(--surface-secondary);
+  border: 1px solid var(--stroke-highlight);
+  outline-offset: 0.1px;
+  box-shadow: 0 0.5rem 0.5rem var(--text-tertiary);
+}
+
+input[type="date"] {
+  position: relative;
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../assets/icons/calendar-03.svg);
+    right: 1.6rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+select {
+  background-image: url(../../assets/icons/arrow-down-01.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1.6rem);
+}

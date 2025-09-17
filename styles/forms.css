@@ -1,0 +1,14 @@
+@import url(./fields/index.css);
+
+form {
+  fieldset {
+    border: none;
+    display: grid;
+    gap: 2.4rem;
+
+    legend {
+      font: var(--heading4);
+      margin-bottom: 2.4rem;
+    }
+  }
+}
