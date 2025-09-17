@@ -68,4 +68,30 @@ input {
     border: 1px solid var(--stroke-default);
     color: var(--text-primary);
   }
+
+  &:invalid {
+    border: 0.2rem solid var(--semantic-error);
+    padding: 1.1rem 1.6rem;
+
+    + .error {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.8rem;
+
+      span {
+        color: var(--semantic-error);
+      }
+    }
+  }
+
+  + small {
+    display: block;
+    font: var(--font-sm);
+    margin-top: 0.8rem;
+  }
+
+  &:valid + .error {
+    display: none;
+  }
 }
