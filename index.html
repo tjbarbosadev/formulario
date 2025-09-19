@@ -31,11 +31,7 @@
             </p>
           </header>
 
-          <form
-            action="/index.html"
-            method="post"
-            enctype="multipart/form-data"
-          >
+          <form action="/index.html" method="get" enctype="multipart/form-data">
             <fieldset class="child-info">
               <legend>Informações da criança</legend>
 
@@ -46,6 +42,7 @@
                   id="fullname"
                   name="fullname"
                   placeholder="Nome da criança"
+                  required
                 />
               </div>
 
@@ -180,6 +177,7 @@
                   id="guardian-name"
                   name="guardian-name"
                   placeholder="John Doe"
+                  required
                 />
                 <small
                   >Principal responsável legal e contato de emergência</small
@@ -203,6 +201,7 @@
                   id="guardian-email"
                   name="guardian-email"
                   placeholder="user@mail.com"
+                  required
                 />
                 <div class="error">
                   <img
@@ -227,6 +226,7 @@
                       name="study-shift"
                       id="morning"
                       value="morning"
+                      required
                     />
                     <img
                       src="./assets/icons/sun-cloud-02.svg"
@@ -266,6 +266,7 @@
                       name="study-sport"
                       id="soccer"
                       value="soccer"
+                      required
                     />
                     <img
                       src="./assets/icons/football.svg"
