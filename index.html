@@ -31,7 +31,11 @@
             </p>
           </header>
 
-          <form action="" method="post" enctype="multipart/form-data">
+          <form
+            action="/index.html"
+            method="post"
+            enctype="multipart/form-data"
+          >
             <fieldset class="child-info">
               <legend>Informações da criança</legend>
 
@@ -342,6 +346,24 @@
                 </div>
               </div>
             </fieldset>
+
+            <div class="terms">
+              <input type="checkbox" name="terms" id="terms" />
+              <div class="checkbox-image"></div>
+              <p>
+                Declaro que li e concordo com os
+                <a href="#"><strong>Termos e Condições</strong></a> e com a
+                <a href="#"><strong>Política de Privacidade</strong></a> da
+                escola Estrela do Amanhã.
+              </p>
+            </div>
+
+            <div class="actions-box">
+              <button class="btn-secondary" type="button">
+                Salvar respostas
+              </button>
+              <button class="btn-primary">Fazer matrícula</button>
+            </div>
           </form>
         </div>
       </main>

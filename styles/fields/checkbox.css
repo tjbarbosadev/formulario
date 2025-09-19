@@ -1,0 +1,39 @@
+.terms {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  position: relative;
+
+  input {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    width: 2.4rem;
+  }
+
+  .checkbox-image {
+    background-image: url(../../assets/icons/checkbox-default.svg);
+    background-repeat: no-repeat;
+    width: 4.2rem;
+    height: 2.4rem;
+  }
+
+  &:hover,
+  &:focus-within {
+    .checkbox-image {
+      background-image: url(../../assets/icons/checkbox-hover.svg);
+    }
+  }
+
+  &:has(:checked) {
+    .checkbox-image {
+      background-image: url(../../assets/icons/checkbox-selected.svg);
+    }
+  }
+
+  strong {
+    font-weight: 500;
+    color: var(--stroke-highlight);
+  }
+}
